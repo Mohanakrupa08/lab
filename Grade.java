@@ -9,6 +9,7 @@ public class Grade {
         }
         else if(n>80 && n<=90){
             System.out.println("B");
+            
         }
         else if(n>70 && n<=80){
         System.out.println("C");
@@ -26,3 +27,4 @@ public class Grade {
     }
     
 }
+
