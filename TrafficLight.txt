@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class TrafficLight {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the color of the traffic light (red, yellow, or green):");
+        String lightColor = scanner.nextLine().toLowerCase(); // Read input and convert to lowercase
+
+        switch (lightColor) {
+            case "red":
+                System.out.println("stop");
+                break;
+            case "yellow":
+                System.out.println("ready to go");
+                break;
+            case "green":
+                System.out.println("go");
+                break;
+            default:
+                System.out.println("Invalid input. Please enter 'red', 'yellow', or 'green'.");
+        }
+
+        scanner.close();
+    }
+}
